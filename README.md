@@ -9,8 +9,8 @@ The integration of this deep learning-based segmentation approach into clinical 
 ```This Project is running live on 🤗 Hugging Face. You can run the app on your machine by pulling the Docker 🐋 Image from docker hub.```
 ```Tutorial Notebook is available on Kaggle```
 
-[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face%20-Space%20-ff5a1f.svg)]([https://huggingface.co/models](https://huggingface.co/spaces/smishr-18/MRISegmentation/tree/main))
-[![Kaggle](https://img.shields.io/badge/Kaggle-Dataset/or/Kernel-20BEFF.svg)](https://www.kaggle.com/your_username/dataset-name-or-kernel-name)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face%20-Space%20-ff5a1f.svg)]([https://huggingface.co/models]([https://huggingface.co/spaces/smishr-18/MRISegmentation/tree/main](https://huggingface.co/spaces/smishr-18/MRISegmentation)))
+[![Kaggle](https://img.shields.io/badge/Kaggle-Dataset/or/Kernel-20BEFF.svg)]([https://www.kaggle.com/your_username/dataset-name-or-kernel-name](https://www.kaggle.com/code/kianindeed/mri-segmenttation-tutorial))
 
 ## Results
 * Hyperparameters
@@ -40,6 +40,7 @@ LEARNING_RATE = 1e-4
 
 
 **Ploting Results**
+Original     |    Mask     |  predicted
 
 ![output](https://github.com/mishra-18/MRI-Segmentation/assets/155224614/e62424c4-da9c-433e-9e72-aed4f089edc1)
 
