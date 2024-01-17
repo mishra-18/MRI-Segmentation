@@ -4,12 +4,12 @@
 Our model is trained on a diverse dataset encompassing various tumor types, sizes, and locations, capturing the inherent heterogeneity of brain tumors encountered in clinical practice. The semantic segmentation architecture enables accurate localization and differentiation of tumor regions from surrounding healthy brain tissues, providing a valuable tool for early detection and characterization of lesions.
 
 ## Motivation
-The integration of this deep learning-based semantic segmentation approach into clinical workflows holds great promise for advancing the field of neuro-oncology. By automating the tumor detection process, our methodology not only expedites diagnosis but also provides clinicians with a reliable tool for precise delineation and monitoring of brain tumors, contributing to improved patient outcomes and treatment planning.
+The integration of this deep learning-based segmentation approach into clinical workflows holds great promise for advancing the field of neuro-oncology. By automating the tumor detection process, our methodology not only expedites diagnosis but also provides clinicians with a reliable tool for precise delineation and monitoring of brain tumors, contributing to improved patient outcomes and treatment planning.
 
-```This Project is running live on Hugging Face. You can run the app on your machine by pulling the Docker 🐋 Image from docker hub.```
+```This Project is running live on 🤗 Hugging Face. You can run the app on your machine by pulling the Docker 🐋 Image from docker hub.```
 ```Tutorial Notebook is available on Kaggle```
 
-[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Space%20-ff5a1f.svg)]([https://huggingface.co/models](https://huggingface.co/spaces/smishr-18/MRISegmentation/tree/main))
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face%20-Space%20-ff5a1f.svg)]([https://huggingface.co/models](https://huggingface.co/spaces/smishr-18/MRISegmentation/tree/main))
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset/or/Kernel-20BEFF.svg)](https://www.kaggle.com/your_username/dataset-name-or-kernel-name)
 
 ## Results
@@ -17,7 +17,7 @@ The integration of this deep learning-based semantic segmentation approach into 
 ```
 # STAGE_NAME = 'Training'
 # MODEL_NAME = 'UNet'
-feature_layers = [64, 128, 256, 512]
+# feature_layers = [64, 128, 256, 512]
 EPOCH = 50
 BATCH_SIZE = 32
 LEARNING_RATE = 1e-4
@@ -56,7 +56,7 @@ cd MRI-Segmentation
 ```
 sudo docker login -u <user-name>
 ```
-* Pull the dcoker image
+* Pull the docker image
 ```
 sudo docker pull mishra45/mris:latest
 ```
@@ -66,12 +66,12 @@ sudo docker run -p 8080:8051 mishra45/mris:latest
 ```
 ## Training
 
-****Follow the API config instructions in .kaggle****
+****Please Follow the API configure instructions in config/configure.py****
 ```
 python main.py
 ```
 
-* Creates a ****Logs/**** Folder to store logs in the stages
+* The dataset used for training is [Brain MRI Segmentation](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation).There's no need to download, the Data Ingestion Stage will do it for you. given you configured your kaggle username under config/.
 * Data Ingestion Stage: Starts downloading data into data/, Preprocess the data and prepare the dataloaders.
 * Training Stage: Starts Training the model
-* After Training is finished the model weights will be stored under src/model/ for inference. The project is already deloyed on [huggingface space](https://huggingface.co/spaces/smishr-18/MRISegmentation/tree/main) and you can perform inference from there or else run ```streamlit run app.py``` after training is finished.
+* After Training is finished the model weights will be stored under src/model/ for inference. The project is already deloyed on [huggingface space](https://huggingface.co/spaces/smishr-18/MRISegmentation/tree/main) and you can perform inference from there or else run ```streamlit run app.py``` after training.
