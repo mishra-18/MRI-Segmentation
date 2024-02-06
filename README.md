@@ -34,7 +34,7 @@ LEARNING_RATE = 1e-4
 |Test    | Loss        |  0.012         |
 |Test    | Dice Score  |  0.87          |
 
-**Note** These are the results for 50 EPOCH, on training the model For 100 EPOCHS the Val Dice Score reached to .91 but test dice score remained around ~ 0.90.
+**Note** These are the results for 50 EPOCH, on training the model For 100 EPOCHS the Val Dice Score reached .91 but the test dice score remained around ~ 0.90.
 
 
 **Ploting Results**
@@ -42,7 +42,7 @@ Original     |    Mask     |  predicted
 
 ![output](https://github.com/mishra-18/MRI-Segmentation/assets/155224614/e62424c4-da9c-433e-9e72-aed4f089edc1)
 
-## Usage 🐍
+## Usage
 
 * Clone the repository
 ```
@@ -51,7 +51,7 @@ cd MRI-Segmentation
 ```
 ## Docker 🐋
 
-* login to your docker with docker hub
+* log in to your docker with the docker hub
 ```
 sudo docker login -u <user-name>
 ```
@@ -59,7 +59,7 @@ sudo docker login -u <user-name>
 ```
 sudo docker pull mishra45/mris:latest
 ```
-* Run the streamlit app
+* Run the Streamlit app
 ```
 sudo docker run -p 8080:8051 mishra45/mris:latest
 ```
@@ -70,7 +70,7 @@ sudo docker run -p 8080:8051 mishra45/mris:latest
 python main.py
 ```
 
-* The dataset used for training is [Brain MRI Segmentation](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation).There's no need to download, the Data Ingestion Stage will do it for you. given you configured your kaggle username under config/.
-* Data Ingestion Stage: Starts downloading data into data/, Preprocess the data and prepare the dataloaders.
+* The dataset used for training is [Brain MRI Segmentation](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation). You don't need to download anything, the Data Ingestion Stage will do it for you. given you configured your kaggle username under config/.
+* Data Ingestion Stage: Starts downloading data into data/, Preprocess the data, and prepare the dataloaders.
 * Training Stage: Starts Training the model
-* After Training is finished the model weights will be stored under src/model/ for inference. The project is already deloyed on [huggingface space](https://huggingface.co/spaces/smishr-18/MRISegmentation/tree/main) and you can perform inference from there or else run ```streamlit run app.py``` after training.
+* After Training is finished the model weights will be stored under src/model/ for inference. The project is already deployed on [huggingface space](https://huggingface.co/spaces/smishr-18/MRISegmentation/tree/main) and you can perform inference from there or else run ```streamlit run app.py``` after training.
