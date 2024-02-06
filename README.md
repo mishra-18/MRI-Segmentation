@@ -25,8 +25,6 @@ LEARNING_RATE = 1e-4
 **Model Architecture**
 
   
-  ![download](https://github.com/mishra-18/MRI-Segmentation/assets/155224614/2a5035f1-64fc-4b06-a2bf-7225b7fb3545)
-
 |SET     | MERICS      | Loss/DiceScore |
 |--------| ----------- | -----------    |
 |Training| Loss        |  0.0054        |
@@ -44,14 +42,14 @@ Original     |    Mask     |  predicted
 
 ![output](https://github.com/mishra-18/MRI-Segmentation/assets/155224614/e62424c4-da9c-433e-9e72-aed4f089edc1)
 
-## Usage
+## Usage 🐍
 
 * Clone the repository
 ```
 https://github.com/mishra-18/MRI-Segmentation.git
 cd MRI-Segmentation
 ```
-## Docker
+## Docker 🐋
 
 * login to your docker with docker hub
 ```
